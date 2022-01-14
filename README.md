@@ -10,7 +10,7 @@ $ cut -d ',' -f 7 Buzzard2015_data.csv | head -n 1
 
 *cut* se usa para seleccionar columnas y se agrega *7* para establecer que se tome en cuenta esa columna.
 
-*head -n 1* se usó para delimitar que se quiere visulizar solamente la primera fila.
+*head -n 1* se usó para delimitar que se quiere visualizar solamente la primera fila.
 
 Se obtiene: 
 
@@ -22,6 +22,8 @@ En segundo lugar, para obtener el número de valores distintos podemos ordenar l
 
 cut -d ',' -f 7 Buzzard2015_data.csv | tail -n +2 | sort | uniq | wc -l       
 
+*sort* se usa para ordenar los contenido de un archivo. *uniq* es para identificar elemento únicos. Y *wc -l* es para contar solamente líneas. 
+
 Se obtiene:
 
 285
@@ -32,6 +34,8 @@ Se obtiene:
 Para obtener el valor min se utilizó el siguiente código *sort -n* y *head*
 
 cut -d ',' -f 7 Buzzard2015_data.csv | tail -n +2 | sort -n | head -n 1       
+
+*sort -n* es para ordenar números
 
 Se obtiene:
 
